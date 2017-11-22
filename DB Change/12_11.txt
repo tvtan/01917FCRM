@@ -1,0 +1,1 @@
+ALTER TABLE `tblquotes` ADD `change_status` BOOLEAN NULL DEFAULT FALSE ;

@@ -1,0 +1,1 @@
+ALTER TABLE `tblexport_items` ADD `quantity_net` INT NULL AFTER `quantity`;

@@ -1,0 +1,5 @@
+ALTER TABLE `tblclients` ADD `sale_area` INT NULL DEFAULT '11' AFTER `create_by`, ADD `objects_group` INT NULL DEFAULT '4' AFTER `sale_area`;
+
+ALTER TABLE `tblitems` ADD `price_single` INT NULL DEFAULT '0' AFTER `price`;
+
+ALTER TABLE `tblitems` ADD `item_others` TEXT CHARACTER SET utf8 COLLATE utf8_unicode_ci NULL ;

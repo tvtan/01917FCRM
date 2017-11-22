@@ -1,0 +1,3 @@
+﻿ALTER TABLE `tblclients` ADD `create_by` INT NOT NULL;
+
+INSERT INTO `tblwarehouses` (`warehouseid`, `order`, `code`, `warehouse`, `address`, `map`, `phone`, `email`, `kindof_warehouse`, `warehouse_can_export`) VALUES (NULL, NULL, 'WH9', 'Kho chờ bán', '251 Nguyễn Văn Trỗi', NULL, '38 453 052', NULL, '6', '0');

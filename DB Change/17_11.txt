@@ -1,0 +1,18 @@
+ALTER TABLE `tblsales` ADD `isSingle` TINYINT NULL DEFAULT '1' ;
+
+
+ALTER TABLE `tblsale_orders` ADD `isSingle` TINYINT NULL DEFAULT '1'
+
+ALTER TABLE `tblsale_items` ADD `unit_cost_single` DECIMAL(15,0) NULL DEFAULT '0' ;
+
+ALTER TABLE `tblsale_order_items` ADD `unit_cost_single` DECIMAL(15,0) NULL DEFAULT '0' ;
+
+ALTER TABLE `tblsales` CHANGE `isSingle` `isSingle` TINYINT(4) NULL DEFAULT '0';
+
+
+ALTER TABLE `tblsale_orders` CHANGE `isSingle` `isSingle` TINYINT(4) NULL DEFAULT '0';
+
+UPDATE `tblsales` SET `isSingle`=0;
+
+UPDATE `tblsale_orders` SET `isSingle`=0;
+
